@@ -139,7 +139,7 @@ class _HomeViewState extends State<HomeView> {
                                           }
                                         });
                                       },
-                                      style: seconDaryBtn,
+                                      style: secondaryBtn,
                                       child: Text("Done", style: formInput),
                                     ),
                             ],
@@ -235,8 +235,15 @@ Future<void> dialogBuilder(BuildContext context, TodoCubit todoCubit) {
                         });
                       }
                     },
-                    style: seconDaryBtn,
+                    style: secondaryBtn,
                     child: Text("Save", style: formInput),
+                  ),
+                  const SizedBox(height: 7),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text("Cancel", style: formInput),
                   ),
                 ],
               ),

@@ -18,7 +18,7 @@ ButtonStyle primaryBtn = ButtonStyle(
     elevation: const WidgetStatePropertyAll(5),
   );
 
-ButtonStyle seconDaryBtn = ButtonStyle(
+ButtonStyle secondaryBtn = ButtonStyle(
     backgroundColor: WidgetStateColor.resolveWith(
       (states) => secondaryBtnColor,
     ),

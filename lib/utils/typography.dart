@@ -3,7 +3,7 @@ library CustomTypography;
 import 'package:flutter/material.dart';
 import 'package:taksu_to_do_list/utils/color_palette.dart';
 
-const String fontFamily = "";
+const String fontFamily = "Roboto";
 
 TextStyle pageTitle = TextStyle(
   color: white,

@@ -22,14 +22,6 @@ class _LoginViewState extends State<LoginView> {
   final TextEditingController nameController = TextEditingController();
   bool isLoading = false;
 
-  // @override
-  // void initState() {
-  //   // ~ For testing
-  //   nameController.text = "John Doe";
-  //   // nameController.text = "Jesso";
-  //   super.initState();
-  // }
-
   Future<void> handleLogin() async {
     if (formKey.currentState!.validate()) {
       todoCubit.login(nameController.text).then((value) {
