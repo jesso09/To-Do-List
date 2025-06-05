@@ -25,7 +25,6 @@ class _HomeViewState extends State<HomeView> {
 
   @override
   void initState() {
-    todoCubit.loadThenUpdateTodo();
     todoCubit.loadTodo(widget.userName);
     super.initState();
   }
